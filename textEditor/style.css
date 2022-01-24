@@ -1,0 +1,100 @@
+/*==> F O N T S  I M P O R T <==*/
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Neonderthaw&family=Roboto+Mono&family=Rubik+Beastly&family=Sedgwick+Ave&display=swap");
+
+/*==> V A R S  <==*/
+:root {
+  --main-font: "Roboto Mono", monospace;
+  --main-color: #444;
+  --alt-color: #eee;
+}
+
+/*==> F O N T S <==*/
+.dongle-font {
+  font-family: "Dongle", sans-serif;
+}
+.neonderthaw-font {
+  font-family: "Neonderthaw", cursive;
+}
+.rubikBeastly-font {
+  font-family: "Rubik Beastly", cursive;
+}
+.sedgwickAve-font {
+  font-family: "Sedgwick Ave", cursive;
+}
+
+/*==> B A S I C S <==*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--alt-color);
+}
+/*==> H E A D E R <==*/
+header {
+  padding: 5px;
+}
+.nav {
+  display: grid;
+  grid: auto-flow / auto auto auto auto auto;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.nav .font-edit {
+  display: flex;
+}
+.nav .font-edit li:not(:last-child) {
+  margin-right: 10px;
+}
+.nav .font-edit li:nth-child(1) {
+  font-weight: bold;
+}
+.nav .font-edit li:nth-child(2) {
+  font-style: italic;
+}
+.nav .font-edit li:nth-child(3) {
+  text-decoration: underline;
+}
+.nav .text-edit {
+  display: flex;
+}
+.nav .text-edit li:not(:last-child) {
+  margin-right: 10px;
+}
+.nav li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 100%;
+  cursor: pointer;
+}
+.nav li:hover {
+  transition: all 0.3s;
+  background-color: var(--main-color);
+  color: white;
+}
+.nav .active {
+  background-color: var(--main-color);
+  color: white;
+}
+
+main {
+  padding: 10px;
+}
+#box {
+  font-size: 8px;
+  background-color: white;
+}
