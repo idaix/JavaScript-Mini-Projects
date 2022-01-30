@@ -1,0 +1,104 @@
+/*
+font-family: 'Licorice', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  font-family: "Licorice", cursive;
+  font-size: 30px;
+  background-color: #333;
+  color: white;
+}
+
+header {
+  color: white;
+  margin: 10px 100px;
+  text-align: center;
+  font-size: 60px;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+form {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222222;
+  padding: 1px 10px;
+  border-radius: 15px;
+}
+form .input {
+  width: 90%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: "Licorice", cursive;
+}
+input::placeholder {
+  font-family: "Licorice", cursive;
+}
+form .button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.todo-container {
+  margin-top: 20px;
+  width: 400px;
+}
+.li {
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.li button {
+  background: none;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+}
+.li .check {
+  background-color: rgb(29, 107, 25);
+}
+.li .clear {
+  background-color: rgb(107, 25, 25);
+}
+
+i {
+  pointer-events: none;
+}
+
+.checked {
+  background-color: #444;
+  text-decoration: line-through;
+}
