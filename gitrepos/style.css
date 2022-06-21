@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Fascinate+Inline&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.font-logo{
+    font-family: 'Fascinate Inline', cursive;
+}
+
+.text-center{
+    text-align: center;
+}
+
+body{
+    background-repeat: no-repeat;
+    background: rgb(65,72,83);
+    background: linear-gradient(70deg, rgba(65,72,83,1) 14%, rgba(31,32,41,1) 100%);
+    min-height: 100vh;
+    color: white;
+    font-family: 'Courier Prime', monospace;
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.link{
+    color: rgb(249, 248, 255);
+}
+.flex{
+    display: flex;
+}
+.between{
+    justify-content: space-between;
+}
+
+button{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: inherit;
+    color: #fff;
+    transition: .3s;
+    text-transform: uppercase;
+    background-color: rgb(87, 87, 255);
+}
+
+header{
+    padding: 1rem;
+}
+.search-field{
+    width: 100%;
+    display: flex;
+    height: 60px;
+    padding: 5px;
+    border-radius: 10px;
+    background: #ffffff10;
+    backdrop-filter: blur(12px);
+    gap: 5px;
+    box-shadow: rgba(31, 31, 31, 0.2) 0px 8px 24px;
+}
+.search-field input{
+    flex: 1;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+    color: white;
+}
+
+.search-field button{
+    outline: none;
+    padding: 0 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: inherit;
+    background-color: rgb(87, 87, 255);
+    color: #fff;
+    transition: .3s;
+    text-transform: uppercase;
+}
+
+.search-field button:hover{
+    background-color: rgb(64, 64, 233);
+}
+
+.result-field{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #ffffff10;
+    backdrop-filter: blur(12px);
+    box-shadow: rgba(31, 31, 31, 0.2) 0px 8px 24px;
+}
+
+.result-field .repo-description {
+    color: #ccc;
+}
+
+.result-field .item{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #ffffff10;
+    backdrop-filter: blur(12px);
+}
+
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 100px;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+}
